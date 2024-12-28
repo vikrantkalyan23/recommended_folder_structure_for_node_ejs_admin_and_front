@@ -1,0 +1,71 @@
+project-root/
+│
+├── public/                         # Static files (CSS, JS, images, etc.)
+│   ├── admin/                      # Admin-specific static files
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── images/
+│   ├── frontend/                   # Frontend-specific static files
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── images/
+│   └── shared/                     # Shared static files (if any)
+│       ├── css/
+│       ├── js/
+│       └── images/
+│
+├── views/                          # EJS templates
+│   ├── admin/                      # Admin panel views
+│   │   ├── layouts/                # Admin-specific layouts
+│   │   │   └── adminLayout.ejs
+│   │   ├── partials/               # Admin-specific partials
+│   │   │   ├── header.ejs
+│   │   │   ├── footer.ejs
+│   │   │   └── sidebar.ejs
+│   │   ├── login.ejs               # Admin login
+│   │   ├── dashboard.ejs           # Admin dashboard
+│   │   ├── newsList.ejs            # News management
+│   │   └── editNews.ejs            # Edit news form
+│   │
+│   ├── frontend/                   # Frontend views
+│   │   ├── layouts/                # Frontend-specific layouts
+│   │   │   └── frontendLayout.ejs
+│   │   ├── partials/               # Frontend-specific partials
+│   │   │   ├── header.ejs
+│   │   │   ├── footer.ejs
+│   │   └── home.ejs                # Homepage
+│   │
+│   └── shared/                     # Shared views (if applicable)
+│       ├── partials/
+│       │   └── sharedHeader.ejs
+│       └── error.ejs               # Error page
+│
+├── routes/                         # Application routes
+│   ├── admin.js                    # Admin routes
+│   ├── frontend.js                 # Frontend routes
+│   └── shared.js                   # Shared routes (if applicable)
+│
+├── controllers/                    # Business logic
+│   ├── adminController.js          # Admin-specific logic
+│   ├── frontendController.js       # Frontend-specific logic
+│   └── sharedController.js         # Shared logic (if applicable)
+│
+├── models/                         # Database models
+│   ├── User.js                     # User model
+│   ├── News.js                     # News model
+│   └── ...                         # Other models
+│
+├── middlewares/                    # Middleware functions
+│   ├── auth.js                     # Authentication middleware
+│   ├── adminAuth.js                # Admin authentication middleware
+│   └── ...                         # Other middleware
+│
+├── config/                         # Configuration files
+│   ├── db.js                       # MongoDB connection setup
+│   ├── keys.js                     # Secrets and environment variables
+│   └── ...                         # Other config files
+│
+├── app.js                          # Main application entry point
+├── package.json                    # Node.js dependencies and scripts
+├── .env                            # Environment variables
+└── README.md                       # Project documentation
